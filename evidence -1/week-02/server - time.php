@@ -1,3 +1,7 @@
+<?php
+$serverTime = date('Y-m-d H:i:s');
+echo 'Waktu server: ' . $serverTime;
+?>
 <?php $siteName = 'KursusKu UIN';
 $tagline = 'Belajar, daftar, dan kelola kursus dalam satu tempat.';
 $year = date('Y'); ?>
@@ -37,7 +41,7 @@ $year = date('Y'); ?>
     <section id="katalog">
       <h2>Katalog Kursus</h2>
       <article>
-        <h3>bahasa indonesia</h3>
+        <h3>Web Dasar</h3>
         <p> Belajar struktur HTML dan dasar pengembangan web. </p>
       </article>
       <article>
@@ -45,7 +49,7 @@ $year = date('Y'); ?>
         <p> Belajar variabel, operator, percabangan, looping, dan form. </p>
       </article>
       <article>
-        <h3>bahasa indonesia</h3>
+        <h3>Laravel Dasar</h3>
         <p> Mengenal framework, route, controller, view, dan database. </p>
       </article>
     </section> 
@@ -67,8 +71,8 @@ $year = date('Y'); ?>
     </section>
     <section id="kontak">
       <h2>Kontak</h2>
-      <p> Email: luissiregar19@gmail.com </p>
-      <p> Alamat:pasaman timur</p>
+      <p> Email: Seindevstudio@gmail.com </p>
+      <p> Alamat: UIN Sjech M Djamil Djambek </p>
     </section>
   </main>
   <footer> <small> &copy; <?= $year ?> <?= htmlspecialchars($siteName) ?> </small> </footer>
