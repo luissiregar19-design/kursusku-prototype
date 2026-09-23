@@ -1,58 +1,59 @@
 <?php
 require_once __DIR__ . '/helpers.php';
+
 $siteName = 'KursusKu UIN';
 $tagline = 'Belajar, daftar, dan kelola kursus dalam satu tempat.';
 $year = date('Y');
 
 $courses = [
-  [
-    'code' => 'WEB-01',
-    'name' => 'Web Dasar',
-    'fee' => 200000,
-    'quota' => 30,
-    'registered' => 12,
-    'start_date' => '2026-09-21',
-  ],
-  [
-    'code' => 'PHP-01',
-    'name' => 'PHP Dasar',
-    'fee' => 250000,
-    'quota' => 30,
-    'registered' => 18,
-    'start_date' => '2026-09-22',
-  ],
-  [
-    'code' => 'PHP-02',
-    'name' => 'PHP Lanjutan',
-    'fee' => 300000,
-    'quota' => 25,
-    'registered' => 24,
-    'start_date' => '2026-09-24',
-  ],
-  [
-    'code' => 'LAR-01',
-    'name' => 'Laravel Fundamental',
-    'fee' => 350000,
-    'quota' => 25,
-    'registered' => 25,
-    'start_date' => '2026-09-28',
-  ],
-  [
-    'code' => 'DB-01',
-    'name' => 'MySQL Dasar',
-    'fee' => 275000,
-    'quota' => 20,
-    'registered' => 0,
-    'start_date' => '2026-10-01',
-  ],
-  [
-    'code' => 'UI-01',
-    'name' => 'UI Web Dasar',
-    'fee' => 225000,
-    'quota' => 35,
-    'registered' => 9,
-    'start_date' => '2026-10-03',
-  ],
+    [
+        'code' => 'WEB-01',
+        'name' => 'Web Dasar',
+        'fee' => 200000,
+        'quota' => 30,
+        'registered' => 12,
+        'start_date' => '2026-09-21',
+    ],
+    [
+        'code' => 'PHP-01',
+        'name' => 'PHP Dasar',
+        'fee' => 250000,
+        'quota' => 30,
+        'registered' => 18,
+        'start_date' => '2026-09-22',
+    ],
+    [
+        'code' => 'PHP-02',
+        'name' => 'PHP Lanjutan',
+        'fee' => 300000,
+        'quota' => 25,
+        'registered' => 24,
+        'start_date' => '2026-09-24',
+    ],
+    [
+        'code' => 'LAR-01',
+        'name' => 'Laravel Fundamental',
+        'fee' => 350000,
+        'quota' => 25,
+        'registered' => 25,
+        'start_date' => '2026-09-28',
+    ],
+    [
+        'code' => 'DB-01',
+        'name' => 'MySQL Dasar',
+        'fee' => 275000,
+        'quota' => 20,
+        'registered' => 0,
+        'start_date' => '2026-10-01',
+    ],
+    [
+        'code' => 'UI-01',
+        'name' => 'UI Web Dasar',
+        'fee' => 225000,
+        'quota' => 35,
+        'registered' => 9,
+        'start_date' => '2026-10-03',
+    ],
 ];
 ?>
 <!doctype html>
@@ -73,6 +74,7 @@ $courses = [
       <a href="#kontak">Kontak</a>
     </nav>
   </header>
+
   <main>
     <section id="hero">
       <h1><?= htmlspecialchars($tagline) ?></h1>
@@ -149,7 +151,7 @@ $courses = [
         <source src="assets/video/intro-kursus.mp4" type="video/mp4">
         Browser Anda tidak mendukung video HTML5.
       </video>
-      <p><a href="://www.php.nehttpst/" target="_blank" rel="noopener">Dokumentasi PHP</a></p>
+      <p><a href="https://www.php.net/" target="_blank" rel="noopener">Dokumentasi PHP</a></p>
     </section>
 
     <section id="kontak">
