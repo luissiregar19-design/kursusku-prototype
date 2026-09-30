@@ -1,0 +1,18 @@
+====================================================================
+               HASIL PENGUJIAN FORM PENDAFTARAN (WEEK 05)
+====================================================================
+
+No | Skenario Uji      | Langkah Pengujian                             | Hasil / Status
+---------------------------------------------------------------------------------------
+1  | Load Form         | Buka registration.php                         | Lulus - Tampil tanpa error
+2  | Required Field    | Kirim form dalam keadaan kosong               | Lulus - Browser menahan submit
+3  | Validasi Email    | Isi email dengan format salah (misal: abc)    | Lulus - Browser meminta format email valid
+4  | Validasi Minlength| Isi nama hanya 2 karakter                     | Lulus - minlength mencegah submit
+5  | Eksperimen GET    | Ubah method="GET" lalu submit data            | Lulus - Parameter data terlihat di URL
+6  | Method POST       | Kembalikan method="POST" lalu submit          | Lulus - Data dikirim via body (URL bersih)
+7  | Radio Button      | Pilih opsi Jenis Peserta                      | Lulus - Nilai terbaca & muncul di ringkasan
+8  | Checkbox Array    | Pilih 2 opsi Minat Tambahan                   | Lulus - Tergabung dengan implode()
+9  | Textarea          | Isi catatan opsional                          | Lulus - Tampil aman dengan fungsi e()
+10 | Hidden Input      | Submit form                                   | Lulus - Field 'source' bernilai week-05
+11 | Tampilan Mobile   | Uji pada DevTools ukuran 360px                | Lulus - Responsive 1 kolom, no overflow
+12 | Navigasi Link     | Klik Beranda -> Katalog -> Daftar             | Lulus - Semua tautan berfungsi dengan baik

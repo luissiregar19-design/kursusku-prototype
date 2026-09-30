@@ -1,0 +1,14 @@
+====================================================================
+           TABEL PERBANDINGAN LOCAL DEVELOPMENT VS HOSTING
+====================================================================
+
+Aspek           | Local Development             | Hosting / Production
+--------------------------------------------------------------------
+URL             | http://kursusku-prototype.test| https://domain-anda.com (Domain Publik)
+Lokasi File     | C:\laragon\www\... (Laptop)   | Remote Web Server
+Database        | MySQL Lokal (Laragon)         | Database Server Production
+Environment     | Development (Bebas Debug)     | Production (Aman & Stabil)
+HTTPS / SSL     | Opsional / HTTP               | Wajib HTTPS (SSL Certificate)
+Debug / Error   | Menampilkan detail error PHP  | Error disembunyikan dari publik
+Secret / Keys   | Disimpan lokal                | Disimpan aman via Environment Config
+Document Root   | Folder proyek di Laragon      | Folder public / public_html provider
